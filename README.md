@@ -29,5 +29,11 @@ $ java -jar selenium-server-standalone-2.53.0.jar
 In another bash:
 
 ```sh
+$ gulp serve
+```
+
+And in another bash:
+
+```sh
 $ nightwatch start
 ```
