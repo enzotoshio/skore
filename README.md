@@ -1,6 +1,6 @@
-# NetSearch
+# Skore
 
-Movies search using Netflix Roulette API.
+Simple marionette application to change dom based on interaction.
 
 ## Installation
 
