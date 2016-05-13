@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>skore</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <section id="main-region">
+    </section>
+
+    <script type="text/template" id="app-skeleton">
+      <header id="header-container">
+      </header>
+    </script>
+
+    <script type="text/template" id="header-skeleton">
+      <section class="background-container">
+        <img id="header-background" src="http://res.cloudinary.com/skore-production/image/upload/c_fill,dpr_2.0,f_auto,w_980/d6sndbxfuuccttm5uwbb" alt="">
+        <section class="board-info">
+          <h1 class="title" id="header-title">Title</h1>
+          <h2 class="subtitle" id="header-subtitle">Subtitle</h2>
+        </section>
+      </section>
+      <form method="GET" id="header-manager-container">
+        <p class="form-title">Redefinir board</p>
+        <button type="button" id="header-submit-button">Alterar</button>
+      </form>
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/underscore/underscore.js"></script>
+    <script src="/bower_components/backbone/backbone.js"></script>
+    <script src="/bower_components/backbone.babysitter/lib/backbone.babysitter.js"></script>
+    <script src="/bower_components/backbone.wreqr/lib/backbone.wreqr.js"></script>
+    <script src="/bower_components/backbone.marionette/lib/core/backbone.marionette.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/api.js"></script>
+    <script src="scripts/collections/categories-collection.js"></script>
+    <script src="scripts/collections/boards-collection.js"></script>
+    <script src="scripts/views/categories-view.js"></script>
+    <script src="scripts/views/boards-view.js"></script>
+    <script src="scripts/views/header-view.js"></script>
+    <script src="scripts/controllers/app-controller.js"></script>
+    <script src="scripts/layouts/app-layout.js"></script>
+    <script src="scripts/routers/app-router.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
