@@ -7,7 +7,7 @@ API.Collections.Boards = Backbone.Collection.extend( {
     var filtered = this.filter( function ( item ) {
       return item.get( 'category_id' ) === Number(categoryId);
     } );
-debugger
+
     return new API.Collections.Boards( filtered );
   }
 } );
